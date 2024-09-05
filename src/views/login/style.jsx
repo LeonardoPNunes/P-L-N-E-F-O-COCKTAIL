@@ -23,18 +23,3 @@ transform: translate(-50%, -50%);
     width:60%;
 }
 `
-export const Acess = styled.div`
-position: fixed;
-top:10vh;
-right:3vh;
-background:#0A2647;
-height: 20vh;
-padding:5px;
-border-radius: 5px;
-border:1px solid white;
-z-index:100;
->h1{
-color:white;
-font-size: 15px;
-}
-`

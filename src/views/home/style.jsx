@@ -110,7 +110,7 @@ justify-content:end;
 
 export const SwitchContainer = styled.div`
 position: absolute;
-right: 49px;
+right: 3vw;
 top:12px;
 
 text-align: center;

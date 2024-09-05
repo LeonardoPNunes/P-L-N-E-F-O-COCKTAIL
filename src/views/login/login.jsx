@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom"
 import * as loginActions from "../../store/modules/login/actions"
 import { AlignlR, Button, Input } from "../../utils/globalStyle/global"
 import { 
-LoginContainer, Acess } from "./style.jsx"
+LoginContainer } from "./style.jsx"
 import * as LoadingActions from '../../store/modules/loading/actions'
 
 import { notifyWarn } from "../../components/notification"
@@ -46,19 +46,16 @@ const Login = () => {
             onChange('name',savedName);
             onChange('password',savedPassword);
             onChange('validated', true);
-            validateLogin() 
-
-
-            
+            validateLogin()
+        }
+        else{
+            onChange('name',"admin@gmail.com");
+            onChange('password',"123");
         }
     // eslint-disable-next-line react-hooks/exhaustive-deps
     },[])
 return(
-    <div>
-        <Acess>
-            <h1>Login: admin@gmail.com</h1>
-            <h1>Senha: 123</h1>
-        </Acess>
+  
     <LoginContainer>
         <Logo container={true}/>
         <AlignlR>
@@ -79,7 +76,7 @@ return(
 
         <Button onClick={() => validateLogin()}>Entrar</Button>
     </LoginContainer>
-    </div>
+
 )
 }
 export default Login
