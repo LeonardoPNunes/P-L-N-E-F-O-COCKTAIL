@@ -8,7 +8,7 @@ import Suggestions from "../../components/suggestions";
 const Favorites = () =>{
     const navigate = useNavigate();
     const savedFavorites = JSON.parse(localStorage.getItem("drinksFavorites"));
-    
+    console.log(savedFavorites + "oiiiiiiiiiiiiiiiiii")
     return(
         <FavoriteContainer>
             <BoxToBack>
@@ -20,7 +20,7 @@ const Favorites = () =>{
             <DividerX />
             <BoxListFavorites>
         {
-savedFavorites.length <= 0 ?
+savedFavorites?.length <= 0 || savedFavorites === null ?
             (
             <ContainerEmptyDrink>
                 <TextPageName>Não Há nada aqui!</TextPageName>

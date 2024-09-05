@@ -17,8 +17,9 @@ border:2px solid rgba(255,255,255, 0.3)
 }
 `
 export const Input = styled.input`
-width:25vw;
+width:100%;
 height:30px;
+padding:0 5px;
 border:none;
 border-radius:5px;
 `
@@ -26,6 +27,10 @@ border-radius:5px;
 export const AlignlR = styled.div`
 margin: 0 auto;
 width:25vw;
+
+@media (max-width: 750px){
+  width:100%;
+}
 
 `
 export const BackButton = styled.button`
